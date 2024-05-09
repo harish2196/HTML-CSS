@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<style>
+    body{
+background-image: url(a3.png);
+min-height: 90vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+   background-position: center;
+   }
+   body, html {
+    height: 85%; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.box {
+    border: 2px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 5px 5px 7px 7px black;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+nav ul li {
+    float: left; 
+    justify-content: space-around;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.login-btn, .signup-btn {
+    background-color: lightblue; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 2px;
+    cursor: pointer;
+    border-radius:23px;
+    transition: background-color 0.3s ease; 
+}
+
+.login-btn:hover, .signup-btn:hover {
+    background-color: white; 
+}
+
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <marquee behavior="" direction="left">  <h2 style="font-weight: bolder;font-size: 25px; color: black;bottom: 0;">Welcome!</h2></marquee>
+            <p style="font-size: 20px;color: white;font-weight: bolder;font-size: 25px;margin-top: 3%;">Please sign up or log in to continue.</p>
+            <button class="login-btn"> <a href="Singup.html" >Login</a></button>
+            <button class="signup-btn"><a href="Login.html">Sign Up</a></button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url("a2.png");
+        min-height: 90vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+   background-position: center;
+    }
+    .box{
+     text-align: center;
+  margin-top: 4%;
+  margin-left: 2%;
+    }
+    .log {
+    border: 1px solid black; 
+    padding: 20px;
+    width: 300px; 
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 50%;
+    background-color: transparent;
+    box-shadow: 5px 5px 7px 10px black;
+  text-align: center;
+    margin: 0 auto; 
+}
+.b1{
+    background-color: lightblue; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 2px;
+    cursor: pointer;
+    border-radius:23px;
+    transition: background-color 0.3s ease;
+    box-shadow: 3px 3px 3px 2px  gray;
+}
+.b1:hover{
+    background-color: white; 
+}
+.lo{
+  margin-bottom: 2%;
+  color: white;
+}
+nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+nav ul li {
+    float: left; 
+    justify-content: space-around;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="box">
+        <div class="log">
+                <h2 style="color: black;">Login</h2>
+                <form method="post">
+                    <label for="Username">Username: </label>
+                <input type="text" name="username" placeholder="Enter a Username" required><br><br>
+                <label for="Password">Password: </label>
+                <input type="password" name="password" placeholder="Enter a Password" required><br>
+                <hr>
+             <div class="lo">
+                <a href="Login.html"><p>Forget Password ?</p></a>  
+             </div>
+                <button class="b1"><a href="Demo.html">Login</a></button><br><br>
+                </div>
+            </div>
+            </body>
+</html>
