@@ -3,90 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Kinder Festival</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-    body{
-      background-color: floralwhite;
-        margin: 0;
-    font-family: Arial, sans-serif;
-    }
-    button a{
-        color: black;
-       box-shadow: 10px ;
-    }
-    .button-style {
-        border: none;
-        color: blue;
-        font-size: 25px;
-        padding: 0;
-        margin: 0;
-    }
-    nav {
-    background-color: black;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; 
-}
-
-nav ul li {
-    float: left; 
-    justify-content: space-around;
-}
-
-nav ul li a {
-    display: block;
-    padding: 15px 20px;
-    text-decoration: none;
-    color: white;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-}
-.details{
-   text-align: center;
-}
-.img img {
-            max-width: 20%; 
-            height: 10%;
-        }
-        .b1{
-    border: 1px solid black;
-    color: red;
-    background-color: wheat;
-    width: 90px;
-    padding: 7px 8px;
-    color: gray;
-    border-radius: 23%;
-    box-shadow: 3px 3px 3px 2px  gray;
-}
-
-
-</style>
 <body>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="Demo.html">Home</a></li>
+            <li><a href="Demo1.html">About</a></li>
+            <li><a href="Demo2.html">Services</a></li>
+            <li><a href="Demo3.html">Contact</a></li>
+            <p style="color: white;margin-left: 85%;font-weight: bolder;">Hey Happy kid!</p>
         </ul>
-    </nav>
-    <div class="details">
-        <marquee behavior="" direction="left"><h1 style="font-style: oblique;font-weight: bold;color: black;font-size: 45px;margin-right: 14%;">Welcome :)</h1></marquee>
-    <h2>Student Details</h2>
-    <div class="img">
-    <img src="c:\Users\Hari3552\Pictures\Saved Pictures\profile.jpg" alt="Unknown">
-</div>
-    <h3>Harish kumar</h3>
-<h4>click here to see a Personal Details</h4>
-<button class="b1"> <a href="Demo1.html">Click here</a></button><br><br>
       
-</div>
+    </nav>
+    <header>
+       <marquee behavior="" direction=""> <h1>Kinder Festival</h1></marquee>
+    </header>
+    <p style="font-size: 30px; color:darkmagenta; font-weight: bolder;text-align: center;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Events</p>
+    <main>
+        <section class="events">
+          
+            <div class="event-card">
+                <div class="img1">
+                <img src="a23.png" alt="Event 1">
+            </div>
+            <div class="tex">
+                <h3>Face Painting Fun</h3>
+                <p>Date: July 15, 2024</p>
+                <p>Time: 10:00 AM - 1:00 PM</p>
+                <p>Location: Kids Zone</p>        
+            </div> 
+                <button class="btn"> <a href="details1.html"> More Details</a></button>
+             </div>
+            <div class="event-card">
+                <div class="img1">
+                <img src="a21.png" alt="Event 2">
+            </div>
+            <div class="tex1">
+                <h3>Bouncy Castle Adventure</h3>
+                <div class="tex11">
+                <p>Date: July 16, 2024</p>
+                <p>Time: 11:00 AM - 3:00 PM</p>
+                <p>Location: Main Stage Area</p>
+            </div>
+            </div>
+                <button class="btn">More Details</button>
+            </div>
+
+            <div class="event-card">
+                <div class="img1">
+                <img src="a24.png" alt="Event 2">
+            </div>
+            <div class="tex">
+                <h3>Muscial chairs</h3>
+                <p>Date: July 17, 2024</p>
+                <p>Time: 09:00 AM - 12:00 PM</p>
+                <p>Location: Indoor Stadium</p>
+            </div>
+                <button class="btn">More Details</button>
+            </div>         
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kinder Festival. All rights reserved.</p>
+    </footer>
 </body>
 </html>

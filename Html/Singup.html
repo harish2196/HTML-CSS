@@ -9,7 +9,7 @@
     body{
         margin: 0;
         padding: 0;
-        background-image: url("a2.png");
+        background-image: url("b1.jpg");
         min-height: 90vh;
         background-size: cover;
         background-repeat: no-repeat;
@@ -17,8 +17,9 @@
     }
     .box{
      text-align: center;
-  margin-top: 4%;
-  margin-left: 2%;
+  margin-top: 9%;
+  margin-right: 47%;
+
     }
     .log {
     border: 1px solid black; 
@@ -33,7 +34,7 @@
     margin: 0 auto; 
 }
 .b1{
-    background-color: lightblue; 
+    background-color: cadetblue; 
     border: none;
     color: white;
     padding: 10px 20px;
@@ -43,12 +44,13 @@
     font-size: 16px;
     margin: 8px 2px;
     cursor: pointer;
-    border-radius:23px;
+    border-radius:15px;
     transition: background-color 0.3s ease;
     box-shadow: 3px 3px 3px 2px  gray;
 }
 .b1:hover{
-    background-color: white; 
+    background-color: firebrick;
+    transform: scale(1.05); 
 }
 .lo{
   margin-bottom: 2%;
@@ -78,32 +80,37 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    background-color: firebrick;
+    transform: scale(1.09);
 }
 </style>
 <body>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="Demo.html">Home</a></li>
+            <li><a href="Demo1.html">About</a></li>
+            <li><a href="Demo2.html">Services</a></li>
+            <li><a href="Demo3.html">Contact</a></li>
+            <p style="color: white;margin-left: 85%;font-weight: bolder;">Hey Happy kid!</p>
         </ul>
     </nav>
     <div class="box">
-        <div class="log">
-                <h2 style="color: black;">Login</h2>
-                <form method="post">
-                    <label for="Username">Username: </label>
+        <div class="log">   
+            <h2 style="color: black;font-size: 25px;" >Login</h2>
+            <form action="#" method="POST">
+                <label for="Username" style="font-size: 20px;">Username: </label>
                 <input type="text" name="username" placeholder="Enter a Username" required><br><br>
-                <label for="Password">Password: </label>
+                <label for="Password" style="font-size: 20px;">Password: </label>
                 <input type="password" name="password" placeholder="Enter a Password" required><br>
                 <hr>
-             <div class="lo">
-                <a href="Login.html"><p>Forget Password ?</p></a>  
-             </div>
-                <button class="b1"><a href="Demo.html">Login</a></button><br><br>
+                <div class="lo">
+                    <a href="Login.html"><p>Forget Password ?</p></a>  
                 </div>
-            </div>
-            </body>
+                <button class="b1" onclick="window.location.href='Demo.html'">Login</button>
+                
+          
+            </form>
+        </div>
+    </div>
+</body>
 </html>

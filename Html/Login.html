@@ -7,30 +7,31 @@
     body{
         margin: 0;
         padding: 0;
-        background-image: url(a2.png);
-min-height: 70vh;
+        background-image: url(b11.jpg);
+min-height: 80vh;
         background-size: cover;
         background-repeat: no-repeat;
    background-position: center;     
     }
     .box{
      text-align: center;
-  margin-top: 3%;
+  margin-top: 5%;
+  margin-right: 45%;
     }
     .log {
-    border: 1px solid black; 
+    border: 3px double black; 
     padding: 20px;
-    color: white;
+    color: black;
     width: 330px; 
     margin-left: 2%;
     font-weight: bolder;
     background-color: transparent;
-    box-shadow: 5px 5px 7px 10px black;
+    box-shadow: 5px 5px 5px 6px black;
   text-align: center;
     margin: 0 auto; 
 }
 .b1{
-    background-color: lightblue; 
+    background-color: cadetblue; 
     border: none;
     color: white;
     padding: 10px 20px;
@@ -45,7 +46,8 @@ min-height: 70vh;
     box-shadow: 3px 3px 3px 2px  gray;
 }
 .b1:hover{
-    background-color: white; 
+    background-color: firebrick; 
+    transform: scale(1.09);
 }
 nav {
     background-color: black;
@@ -77,35 +79,36 @@ nav ul li a:hover {
 <body>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="Demo.html">Home</a></li>
+            <li><a href="Demo1.html">About</a></li>
+            <li><a href="Demo2.html">Services</a></li>
+            <li><a href="Demo3.html">Contact</a></li>
+            <p style="color: white;margin-left: 85%;font-weight: bolder;">Hey Happy kid!</p>
         </ul>
     </nav>
     <div class="box">
-    <div class="log">
+        <div class="log">
             <h2 style="color: black;">Sign Up</h2>
-            <form method="post">
-                <label for="Username">Username: </label>
-            <input type="text" name="username" placeholder="Enter a Username" required><br><br>
-            <label for="Password">Password: </label>
-            <input type="password" name="password" placeholder="Enter a Password" required><br><br>
-            <label for="Password">Confirm Password: </label>
-            <input type="password" name="password" placeholder="Enter a Password" required><br><br>
-            <label for="date">DOB:</label>
-            <input type="date" name="date" placeholder="Date" required min="2000-01-01" max="2024-05-09"><br><br>
-
-            <label>  
-                Gender:   
-                </label>   
-                <input type="radio" id="gender" name="gender" value="male"/> Male    
-                <input type="radio" id="gender" name="gender" value="female"/> Female <br><br>  
-                <label for="number">Phone Number</label>  
-                <input type="tel" name="phonenumber" placeholder="Enter a Phone Number" required>   <br><br><hr>  <br>          
-          <button class="b1"><a href="Singup.html">SignUp</a></button><br><br>
-        </form>
+            <form action="#" method="POST">
+                <label for="username" >Username: </label>
+                <input type="text" name="username" placeholder="Enter a Username" required><br><br>
+                <label for="password">Password: </label>
+                <input type="password" name="password" placeholder="Enter a Password" required><br><br>
+                <label for="confirm_password">Confirm Password: </label>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required><br><br>
+                <label for="date">DOB:</label>
+                <input type="date" name="date" placeholder="Date" required min="2000-01-01" max="2024-05-09"><br><br>
+                <label>Gender:</label>   
+                <input type="radio" name="gender" value="male" id="male"> 
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female"> 
+                <label for="female">Female</label><br><br>
+                <label for="phonenumber">Phone Number:</label>   
+                <input type="tel" name="phonenumber" placeholder="Enter a Phone Number" required><br><hr><br>
+                <button class="b1" onclick="window.location.href='Singup.html'">SignUp</button>
+            </form>
+        </div>
     </div>
-</div>
 </body>
+
 </html>
