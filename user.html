@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<style>
+    body{
+background-image: url(d16.avif);
+min-height: 80vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+   }
+   body, html {
+    height: 0; 
+    margin: 0; 
+    padding: 0; 
+}
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video-container video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.box {
+    /* border: 2px solid #ccc; */
+    padding: 20px;
+    text-align: center;
+    margin-top: 18%;
+    text-decoration: none;
+    /* box-shadow: 2px 2px 4px 4px black; */
+    border-radius: 10px;
+  filter: brightness(100%);
+    background-color: transparent;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+
+nav {
+    background-color: transparent;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+nav ul li {
+    float: left; 
+    justify-content: space-around;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: gray;
+}
+
+.login-btn, .signup-btn {
+    background-color: cornflowerblue; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 2px;
+    cursor: pointer;
+    border-radius:23px;
+    transition: background-color 0.3s ease; 
+}
+
+.login-btn:hover, .signup-btn:hover {
+    background-color: firebrick; 
+    transform: scale(1.09);
+}
+
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Demo.html">Home</a></li>
+            <li><a href="Demo1.html">About</a></li>
+            <li><a href="Demo2.html">Services</a></li>
+            <li><a href="Demo3.html">Contact</a></li>
+            <p style="color: white;margin-left: 85%;font-weight: bolder;">Kinder Festival!</p>
+        </ul>
+    </nav>
+    <!-- <div class="video-container">
+        <video id="video-elem" preload="auto" autoplay="true" loop="loop" muted="muted" poster="opa1px.png"> 
+          <source src="vdo.mp4" type="video/mp4">
+          Video not supported
+        </video>
+      </div> -->
+      
+    <div class="container">
+        <div class="box">
+            <marquee behavior="" direction="left">  <h2 style="font-weight: bolder;font-size: 25px; color: white;bottom: 0;">Welcome to Kinder Fest!</h2></marquee>
+            <p style="font-size: 20px;color: white; font-weight: bolder;font-size: 25px;margin-top: 3%;">Please Signup or Login to Continue.</p>
+            <button class="login-btn" onclick="window.location.href='Login.html'">SignUp</button>
+            <button class="signup-btn" onclick="window.location.href='Singup.html'">Login</button>
+         
+        </div>
+    </div>
+</body>
+</html>

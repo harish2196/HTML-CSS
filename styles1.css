@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 26px;
+    text-align: center;
+}
+
+
+header h1 {
+    margin: 0;
+    color:black;
+}
+main {
+    padding: 20px;
+}
+
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 1.9%;
+    text-align: center;
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+nav ul li {
+    float: left; 
+    justify-content: space-around;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+.a1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.a2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.4em;
+    width: 105%;
+    word-spacing: 2px;
+    bottom: 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #f8b400; 
+}
+.top{
+    width: 60%;
+min-height: 10%;
+ margin-left: 19%;
+ margin-top: 4%;
+}
+.foot{
+    display: flex;
+  }
+  .foot1{
+    margin-left: 4%;
+    right: 0;
+    margin-right: 0;
+  }
+  .foot2{
+    margin-left: 50%;
+  }
+  .video-container {
+    position: relative;
+    padding-bottom: 40%; 
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800.5;
+    height: 1000;
+    background-size: cover;
+  }
+  .video-container {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .video-container video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .border-box {
+    /* border: 1px solid gray; */
+    box-shadow: 0px 0px 4px 8px gray;
+    padding: 20px;
+    margin-left: 14%;
+    width: 70%; 
+    margin-top: -4%;
+    height: 140px;
+    display: flex;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .border-box p {
+    font-size: 18px;
+    color: #666;
+  }
+  .y2 {
+    margin-left: 5%;
+    right: 0;
+  }
+  .y3{
+    margin-left: 13%;
+    right: 0;
+  }
+  .y4{
+    margin-left: 17%;
+  }
