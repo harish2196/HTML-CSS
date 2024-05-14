@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Image Carousel with Sliding Borders</title>
+    <style>
+        .lol {
+            display: flex;
+            overflow: hidden; /* Hide overflowing content */
+            width: 100%; /* Set width to 100% */
+        }
+
+        .carousel {
+            display: flex;
+            animation: slide 5s infinite; /* Apply the slide animation */
+        }
+
+        .f1 {
+            border: 1px solid black;
+            min-height: 30vh;
+            margin-right: 10%;
+            width: 100%;
+            display: flex;
+            transform: translateX(0); /* Initialize translateX value */
+        }
+
+        .f2 img {
+            width: 210px;
+            height: 150px;
+            margin-top: 16px;
+            margin-left: 16px;
+        }
+
+        .f3 {
+            padding: 16px;
+        }
+
+        .f3 h4 {
+            margin-top: 0;
+        }
+
+        /* Keyframes for sliding animation */
+        @keyframes slide {
+            0%, 100% {
+                transform: translateX(0); /* Start and end at initial position */
+            }
+            25% {
+                transform: translateX(0); /* Move to the left by 0% */
+            }
+            50% {
+                transform: translateX(-100%); /* Move to the left by 100% of container width */
+            }
+            75% {
+                transform: translateX(-100%); /* Move to the left by 100% of container width */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="lol">
+        <div class="carousel">
+            <div class="f1">
+                <div class="f2">
+                    <img src="q1.avif" alt="">
+                </div>
+                <div class="f3">
+                    <h4>Topic</h4>
+                    <p>Lorem ipsum dolor sit <br> amet consectetur adipisicing elit. Nostrum, quam?</p>
+                </div>
+            </div>
+            <!-- <div class="f1">
+                <div class="f2">
+                    <img src="q1.avif" alt="">
+                </div>
+                <div class="f3">
+                    <h4>Topic</h4>
+                    <p>Lorem ipsum dolor sit <br> amet consectetur adipisicing elit. Nostrum, quam?</p>
+                </div>
+            </div>
+           -->
+            
+            
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to calculate and set the width of .carousel based on the number of .f1 elements
+        const carousel = document.querySelector('.carousel');
+        const slides = document.querySelectorAll('.f1');
+        carousel.style.width = `${slides.length * 100}%`; // Set the width of .carousel to accommodate all slides
+    </script>
+</body>
+</html>

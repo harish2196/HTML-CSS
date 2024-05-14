@@ -59,16 +59,29 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #555;
 }
-.a1{
+.p11{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
     font-size: 30px;
+    margin-left: -12%;
+    position: relative;
+    display: inline-block;
+}
+.p11::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 3.5px;
+  background-color: #ffcc00; 
 }
 .a2{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
+    margin-left: -12%;
     line-height: 1.4em;
-    width: 105%;
+    width: 125%;
     word-spacing: 2px;
     bottom: 0;
 }
@@ -163,3 +176,72 @@ min-height: 10%;
   .y4{
     margin-left: 17%;
   }
+.value{
+  border: 1px solid #333;
+  min-height: 45vh;
+  background-color: #333;
+}
+.value1{
+  border: 1px solid #ffcc00;
+  box-shadow: 3px 3px 4px 3px #ffcc00;
+  width: 60%;
+  margin-left: 19%;
+  min-height: 18vh;
+
+}
+.value1 p{
+  color: white;
+  font-size: 18px;
+  word-spacing: 2px;
+  margin-top: 5%;
+ text-align: center;
+  line-height: 1.1em;
+}
+.card {
+  width: 230px;
+  height: 230px; 
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 80px;
+  height: 80px; 
+  border-radius: 60%;
+  right: 0;
+margin-left: 76px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+.card-text {
+  padding: 20px;
+}
+
+.card-text h2 {
+  margin-bottom:-10px;
+  margin-top: -3%;
+text-align: center;
+  color: #333;
+
+}
+
+.card-text p {
+  color: #666;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-left: 10px;
+}
+.flex{
+  display: flex;
+  margin-left: 17%;
+  margin-bottom: 6%;
+}

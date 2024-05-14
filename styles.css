@@ -46,6 +46,7 @@ main {
 }
 .events:hover{
    color: purple;
+   transition-duration: 800ms;
 }
 .tex{
     margin-left: 14%;
@@ -334,7 +335,6 @@ margin-left: 47%;
     left: -25px;
     display: none;
   }
-  
   .slider-wrapper .slide-button#next-slide {
     right: -25px;
   }
@@ -431,3 +431,28 @@ margin-left: 47%;
     margin-top: 5%;
     margin-right: 10%;
   }
+  
+  .contain {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 20px 30px 40px rgba(8, 7, 7, 0.1);
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.item:hover{
+  transform: scale(1.04);
+  transition: all ease-in 0.3s;
+}
+
